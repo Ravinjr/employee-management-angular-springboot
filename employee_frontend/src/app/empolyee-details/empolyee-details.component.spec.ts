@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { EmpolyeeDetailsComponent } from './empolyee-details.component';
+
+describe('EmpolyeeDetailsComponent', () => {
+  let component: EmpolyeeDetailsComponent;
+  let fixture: ComponentFixture<EmpolyeeDetailsComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [EmpolyeeDetailsComponent]
+    })
+    .compileComponents();
+    
+    fixture = TestBed.createComponent(EmpolyeeDetailsComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
